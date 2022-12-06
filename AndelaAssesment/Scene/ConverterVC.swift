@@ -9,10 +9,12 @@ import UIKit
 
 class ConverterVC: UIViewController {
     
+    @IBOutlet weak var fromHeadingText: UITextField!
+    @IBOutlet weak var toHeadingText: UITextField!
+    @IBOutlet weak var fromAmountText: UITextField!
+    @IBOutlet weak var toAmountText: UITextField!
     lazy var viewModel = {
         ConverterViewModel()
-        
-        
     }()
     
     override func viewDidLoad() {
@@ -22,11 +24,18 @@ class ConverterVC: UIViewController {
     
     private func initialiseViewModel() {
         viewModel.load()
-        viewModel.reloadTableView = { [weak self] in
+        viewModel.reloadDataSet = { [weak self] in
             DispatchQueue.main.async {
                 print("reload it")
             }
         }
+    }
+    
+    @IBAction func convertCurrencyPressed(_ sender: UIButton) {
+        
+    }
+    @IBAction func showDetailPressed(_ sender: Any) {
+        
     }
 }
 

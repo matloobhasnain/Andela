@@ -9,11 +9,11 @@ import Foundation
 
 class ConverterViewModel {
     
-    var reloadTableView: (() -> Void)?
+    var reloadDataSet: (() -> Void)?
     private var corruncyInteractor: CorruncyInteractor
     private var currenceCells = [CurrencyCellModel]() {
         didSet {
-            reloadTableView?()
+            reloadDataSet?()
         }
     }
     
