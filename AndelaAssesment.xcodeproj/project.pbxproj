@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29BA049DB1CF3F1F9BFA2BB7 /* Pods_AndelaAssesment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E779B5154EBBDEC65221D929 /* Pods_AndelaAssesment.framework */; };
+		3D3835D6293F14E700D9DEBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3835D5293F14E700D9DEBA /* AppDelegate.swift */; };
+		3D3835D8293F14E700D9DEBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3835D7293F14E700D9DEBA /* SceneDelegate.swift */; };
+		3D3835DA293F14E700D9DEBA /* ConverterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3835D9293F14E700D9DEBA /* ConverterVC.swift */; };
+		3D3835DD293F14E700D9DEBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3835DB293F14E700D9DEBA /* Main.storyboard */; };
+		3D3835DF293F14EA00D9DEBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3835DE293F14EA00D9DEBA /* Assets.xcassets */; };
+		3D3835E2293F14EA00D9DEBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3835E0293F14EA00D9DEBA /* LaunchScreen.storyboard */; };
+		3D3835EE293F162800D9DEBA /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3835ED293F162800D9DEBA /* NetworkLayer.swift */; };
+		3D3835F2293F291500D9DEBA /* ConverterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3835F1293F291500D9DEBA /* ConverterViewModel.swift */; };
+		3D3835F5293F2A5000D9DEBA /* CorruncyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3835F4293F2A5000D9DEBA /* CorruncyInteractor.swift */; };
+		3D3835FA293F341C00D9DEBA /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3835F8293F341C00D9DEBA /* Symbols.swift */; };
+		3D3835FB293F341C00D9DEBA /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3835F9293F341C00D9DEBA /* Currency.swift */; };
+		3D3835FD293F38F900D9DEBA /* CurrencyCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3835FC293F38F900D9DEBA /* CurrencyCellModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D3835D2293F14E700D9DEBA /* AndelaAssesment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AndelaAssesment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3835D5293F14E700D9DEBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D3835D7293F14E700D9DEBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3D3835D9293F14E700D9DEBA /* ConverterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterVC.swift; sourceTree = "<group>"; };
+		3D3835DC293F14E700D9DEBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D3835DE293F14EA00D9DEBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D3835E1293F14EA00D9DEBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D3835E3293F14EA00D9DEBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D3835ED293F162800D9DEBA /* NetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		3D3835F1293F291500D9DEBA /* ConverterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewModel.swift; sourceTree = "<group>"; };
+		3D3835F4293F2A5000D9DEBA /* CorruncyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorruncyInteractor.swift; sourceTree = "<group>"; };
+		3D3835F8293F341C00D9DEBA /* Symbols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
+		3D3835F9293F341C00D9DEBA /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		3D3835FC293F38F900D9DEBA /* CurrencyCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCellModel.swift; sourceTree = "<group>"; };
+		8FD2339B4CEDEE5A0104C60B /* Pods-AndelaAssesment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AndelaAssesment.release.xcconfig"; path = "Target Support Files/Pods-AndelaAssesment/Pods-AndelaAssesment.release.xcconfig"; sourceTree = "<group>"; };
+		AB996D04A779270AA01C9EB3 /* Pods-AndelaAssesment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AndelaAssesment.debug.xcconfig"; path = "Target Support Files/Pods-AndelaAssesment/Pods-AndelaAssesment.debug.xcconfig"; sourceTree = "<group>"; };
+		E779B5154EBBDEC65221D929 /* Pods_AndelaAssesment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AndelaAssesment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D3835CF293F14E700D9DEBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29BA049DB1CF3F1F9BFA2BB7 /* Pods_AndelaAssesment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D3835C9293F14E700D9DEBA = {
+			isa = PBXGroup;
+			children = (
+				3D3835D4293F14E700D9DEBA /* AndelaAssesment */,
+				3D3835D3293F14E700D9DEBA /* Products */,
+				74B4A6134089907848F76B38 /* Pods */,
+				DA592A778978D8732546A2E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D3835D3293F14E700D9DEBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D3835D2293F14E700D9DEBA /* AndelaAssesment.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D3835D4293F14E700D9DEBA /* AndelaAssesment */ = {
+			isa = PBXGroup;
+			children = (
+				3D3835EB293F152F00D9DEBA /* application */,
+				3D3835EA293F151C00D9DEBA /* StoryBoard */,
+				3D3835E9293F151300D9DEBA /* Scene */,
+				3D3835EC293F15FB00D9DEBA /* Network */,
+				3D3835F6293F33ED00D9DEBA /* Models */,
+				3D3835F3293F2A3100D9DEBA /* Interactor */,
+				3D3835E0293F14EA00D9DEBA /* LaunchScreen.storyboard */,
+				3D3835E3293F14EA00D9DEBA /* Info.plist */,
+			);
+			path = AndelaAssesment;
+			sourceTree = "<group>";
+		};
+		3D3835E9293F151300D9DEBA /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				3D3835D9293F14E700D9DEBA /* ConverterVC.swift */,
+				3D3835F1293F291500D9DEBA /* ConverterViewModel.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		3D3835EA293F151C00D9DEBA /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				3D3835DB293F14E700D9DEBA /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		3D3835EB293F152F00D9DEBA /* application */ = {
+			isa = PBXGroup;
+			children = (
+				3D3835D5293F14E700D9DEBA /* AppDelegate.swift */,
+				3D3835D7293F14E700D9DEBA /* SceneDelegate.swift */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		3D3835EC293F15FB00D9DEBA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3D3835ED293F162800D9DEBA /* NetworkLayer.swift */,
+				3D3835DE293F14EA00D9DEBA /* Assets.xcassets */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3D3835F3293F2A3100D9DEBA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3D3835F4293F2A5000D9DEBA /* CorruncyInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3D3835F6293F33ED00D9DEBA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D3835F7293F340800D9DEBA /* Currency */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3D3835F7293F340800D9DEBA /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				3D3835F9293F341C00D9DEBA /* Currency.swift */,
+				3D3835F8293F341C00D9DEBA /* Symbols.swift */,
+				3D3835FC293F38F900D9DEBA /* CurrencyCellModel.swift */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
+		74B4A6134089907848F76B38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB996D04A779270AA01C9EB3 /* Pods-AndelaAssesment.debug.xcconfig */,
+				8FD2339B4CEDEE5A0104C60B /* Pods-AndelaAssesment.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA592A778978D8732546A2E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E779B5154EBBDEC65221D929 /* Pods_AndelaAssesment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D3835D1293F14E700D9DEBA /* AndelaAssesment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D3835E6293F14EA00D9DEBA /* Build configuration list for PBXNativeTarget "AndelaAssesment" */;
+			buildPhases = (
+				9DB4D9413C5A08993AD372A8 /* [CP] Check Pods Manifest.lock */,
+				3D3835CE293F14E700D9DEBA /* Sources */,
+				3D3835CF293F14E700D9DEBA /* Frameworks */,
+				3D3835D0293F14E700D9DEBA /* Resources */,
+				8F3A13FDD25CEFB829F126B1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AndelaAssesment;
+			productName = AndelaAssesment;
+			productReference = 3D3835D2293F14E700D9DEBA /* AndelaAssesment.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D3835CA293F14E700D9DEBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					3D3835D1293F14E700D9DEBA = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 3D3835CD293F14E700D9DEBA /* Build configuration list for PBXProject "AndelaAssesment" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D3835C9293F14E700D9DEBA;
+			productRefGroup = 3D3835D3293F14E700D9DEBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D3835D1293F14E700D9DEBA /* AndelaAssesment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D3835D0293F14E700D9DEBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D3835E2293F14EA00D9DEBA /* LaunchScreen.storyboard in Resources */,
+				3D3835DF293F14EA00D9DEBA /* Assets.xcassets in Resources */,
+				3D3835DD293F14E700D9DEBA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8F3A13FDD25CEFB829F126B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AndelaAssesment/Pods-AndelaAssesment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AndelaAssesment/Pods-AndelaAssesment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AndelaAssesment/Pods-AndelaAssesment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DB4D9413C5A08993AD372A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AndelaAssesment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D3835CE293F14E700D9DEBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D3835EE293F162800D9DEBA /* NetworkLayer.swift in Sources */,
+				3D3835F2293F291500D9DEBA /* ConverterViewModel.swift in Sources */,
+				3D3835DA293F14E700D9DEBA /* ConverterVC.swift in Sources */,
+				3D3835F5293F2A5000D9DEBA /* CorruncyInteractor.swift in Sources */,
+				3D3835D6293F14E700D9DEBA /* AppDelegate.swift in Sources */,
+				3D3835FB293F341C00D9DEBA /* Currency.swift in Sources */,
+				3D3835D8293F14E700D9DEBA /* SceneDelegate.swift in Sources */,
+				3D3835FA293F341C00D9DEBA /* Symbols.swift in Sources */,
+				3D3835FD293F38F900D9DEBA /* CurrencyCellModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D3835DB293F14E700D9DEBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D3835DC293F14E700D9DEBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D3835E0293F14EA00D9DEBA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D3835E1293F14EA00D9DEBA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D3835E4293F14EA00D9DEBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D3835E5293F14EA00D9DEBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D3835E7293F14EA00D9DEBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB996D04A779270AA01C9EB3 /* Pods-AndelaAssesment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AndelaAssesment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matloob.abc.AndelaAssesment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D3835E8293F14EA00D9DEBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FD2339B4CEDEE5A0104C60B /* Pods-AndelaAssesment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AndelaAssesment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.matloob.abc.AndelaAssesment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D3835CD293F14E700D9DEBA /* Build configuration list for PBXProject "AndelaAssesment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D3835E4293F14EA00D9DEBA /* Debug */,
+				3D3835E5293F14EA00D9DEBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D3835E6293F14EA00D9DEBA /* Build configuration list for PBXNativeTarget "AndelaAssesment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D3835E7293F14EA00D9DEBA /* Debug */,
+				3D3835E8293F14EA00D9DEBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D3835CA293F14E700D9DEBA /* Project object */;
+}
