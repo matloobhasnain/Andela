@@ -20,6 +20,9 @@
 		3D3835FA293F341C00D9DEBA /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3835F8293F341C00D9DEBA /* Symbols.swift */; };
 		3D3835FB293F341C00D9DEBA /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3835F9293F341C00D9DEBA /* Currency.swift */; };
 		3D3835FD293F38F900D9DEBA /* CurrencyCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3835FC293F38F900D9DEBA /* CurrencyCellModel.swift */; };
+		3D3D282C293FCCE600DB54DF /* Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3D2829293FCCE600DB54DF /* Convert.swift */; };
+		3D3D282D293FCCE600DB54DF /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3D282A293FCCE600DB54DF /* Info.swift */; };
+		3D3D282E293FCCE600DB54DF /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3D282B293FCCE600DB54DF /* Query.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		3D3835F8293F341C00D9DEBA /* Symbols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 		3D3835F9293F341C00D9DEBA /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		3D3835FC293F38F900D9DEBA /* CurrencyCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCellModel.swift; sourceTree = "<group>"; };
+		3D3D2829293FCCE600DB54DF /* Convert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convert.swift; sourceTree = "<group>"; };
+		3D3D282A293FCCE600DB54DF /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		3D3D282B293FCCE600DB54DF /* Query.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
 		8FD2339B4CEDEE5A0104C60B /* Pods-AndelaAssesment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AndelaAssesment.release.xcconfig"; path = "Target Support Files/Pods-AndelaAssesment/Pods-AndelaAssesment.release.xcconfig"; sourceTree = "<group>"; };
 		AB996D04A779270AA01C9EB3 /* Pods-AndelaAssesment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AndelaAssesment.debug.xcconfig"; path = "Target Support Files/Pods-AndelaAssesment/Pods-AndelaAssesment.debug.xcconfig"; sourceTree = "<group>"; };
 		E779B5154EBBDEC65221D929 /* Pods_AndelaAssesment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AndelaAssesment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +139,7 @@
 		3D3835F6293F33ED00D9DEBA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3D3D2828293FCCDA00DB54DF /* Convert */,
 				3D3835F7293F340800D9DEBA /* Currency */,
 			);
 			path = Models;
@@ -146,6 +153,16 @@
 				3D3835FC293F38F900D9DEBA /* CurrencyCellModel.swift */,
 			);
 			path = Currency;
+			sourceTree = "<group>";
+		};
+		3D3D2828293FCCDA00DB54DF /* Convert */ = {
+			isa = PBXGroup;
+			children = (
+				3D3D282A293FCCE600DB54DF /* Info.swift */,
+				3D3D2829293FCCE600DB54DF /* Convert.swift */,
+				3D3D282B293FCCE600DB54DF /* Query.swift */,
+			);
+			path = Convert;
 			sourceTree = "<group>";
 		};
 		74B4A6134089907848F76B38 /* Pods */ = {
@@ -283,12 +300,15 @@
 				3D3835EE293F162800D9DEBA /* NetworkLayer.swift in Sources */,
 				3D3835F2293F291500D9DEBA /* ConverterViewModel.swift in Sources */,
 				3D3835DA293F14E700D9DEBA /* ConverterVC.swift in Sources */,
+				3D3D282C293FCCE600DB54DF /* Convert.swift in Sources */,
+				3D3D282E293FCCE600DB54DF /* Query.swift in Sources */,
 				3D3835F5293F2A5000D9DEBA /* CorruncyInteractor.swift in Sources */,
 				3D3835D6293F14E700D9DEBA /* AppDelegate.swift in Sources */,
 				3D3835FB293F341C00D9DEBA /* Currency.swift in Sources */,
 				3D3835D8293F14E700D9DEBA /* SceneDelegate.swift in Sources */,
 				3D3835FA293F341C00D9DEBA /* Symbols.swift in Sources */,
 				3D3835FD293F38F900D9DEBA /* CurrencyCellModel.swift in Sources */,
+				3D3D282D293FCCE600DB54DF /* Info.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

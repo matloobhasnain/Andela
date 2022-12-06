@@ -34,6 +34,12 @@ class ConverterVC: UIViewController {
                 self?.activeTextField?.text = self?.viewModel.getCellCode(row: 0)
             }
         }
+        
+        viewModel.reloadResult = { [weak self] in
+            DispatchQueue.main.async {
+                self?.toAmountText.text = "\(self?.viewModel.fetchLatestResult() ?? 0)"
+            }
+        }
     }
     
     private func setupUI() {
@@ -43,7 +49,11 @@ class ConverterVC: UIViewController {
     }
     
     @IBAction func convertCurrencyPressed(_ sender: UIButton) {
-        
+        if let from = fromHeadingText.text, let to = toHeadingText.text, let amount = fromAmountText.text, !from.isEmpty && !to.isEmpty && !amount.isEmpty  {
+            if let doubleAmount = Double(fromAmountText.text ?? "") {
+               viewModel.convert(from: from, to: to, amount: doubleAmount)
+            }
+        }
     }
     
     @IBAction func showDetailPressed(_ sender: Any) {

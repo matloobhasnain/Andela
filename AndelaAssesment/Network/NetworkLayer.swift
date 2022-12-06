@@ -49,7 +49,7 @@ extension AppNetwork: TargetType {
         case .fetchAllCurrencies:
             return "fixer/symbols"
         case  let.getConversion(amount, to, from):
-            return "convert?to=\(to)from=\(from)amount=\(amount)"
+            return "fixer/convert"
         }
     }
     
@@ -85,9 +85,11 @@ extension AppNetwork: TargetType {
     
     var task: Task {
         switch self {
-        case .fetchAllCurrencies, .getConversion:
+        case .fetchAllCurrencies:
             return .requestPlain
             
+        case let.getConversion(amount, to, from):
+            return .requestParameters(parameters: ["amount":amount,"to":to, "from": from], encoding: URLEncoding.default)
         }
         
     }

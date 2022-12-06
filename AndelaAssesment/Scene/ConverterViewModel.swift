@@ -10,6 +10,8 @@ import Foundation
 class ConverterViewModel {
     
     var reloadDataSet: (() -> Void)?
+    var reloadResult: (() -> Void)?
+    private var latestResult = 0.0
     private var corruncyInteractor: CorruncyInteractor
     private var currenceCells = [CurrencyCellModel]() {
         didSet {
@@ -25,7 +27,6 @@ class ConverterViewModel {
         corruncyInteractor.FetchRemoteData(for: Currency.self, type: .fetchAllCurrencies) { [weak self] result in
             switch result {
             case let .success(currency):
-         
                 guard let allCurrencies = currency.symbols else { return }
                 var allCurenciesModel = [CurrencyCellModel]()
                 let keysArray = [String] (allCurrencies.keys)
@@ -34,7 +35,20 @@ class ConverterViewModel {
                     allCurenciesModel.append(CurrencyCellModel(symbol: key, name: keyDescription ?? ""))
                 }
                 self?.currenceCells = allCurenciesModel
-                
+            
+            case let .failure(error):
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func convert(from: String, to: String, amount: Double) {
+        corruncyInteractor.FetchRemoteData(for: Convert.self, type: .getConversion(amount: amount, to: to, from: from)) { [weak self] result in
+            switch result {
+            case let .success(convert):
+                print(convert)
+                self?.latestResult = convert.result ?? 0.0
+                self?.reloadResult?()
             case let .failure(error):
                 print(error.localizedDescription)
             }
@@ -52,6 +66,10 @@ class ConverterViewModel {
     
     func getCellCode(row: Int) -> String {
         return "\(currenceCells[row].symbol)"
+    }
+    
+    func fetchLatestResult() -> Double {
+        return latestResult
     }
     
 }
