@@ -11,6 +11,8 @@ class ConverterVC: UIViewController {
     
     lazy var viewModel = {
         ConverterViewModel()
+        
+        
     }()
     
     override func viewDidLoad() {
