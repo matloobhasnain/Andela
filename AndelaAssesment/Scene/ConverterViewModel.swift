@@ -33,7 +33,6 @@ class ConverterViewModel {
                     let keyDescription = allCurrencies[key]
                     allCurenciesModel.append(CurrencyCellModel(symbol: key, name: keyDescription ?? ""))
                 }
-                print(self?.currenceCells.count)
                 self?.currenceCells = allCurenciesModel
                 
             case let .failure(error):
@@ -41,4 +40,18 @@ class ConverterViewModel {
             }
         }
     }
+    
+    func numberOfCells() -> Int {
+        return currenceCells.count
+    }
+    
+    func getCellTitle(row: Int) -> String {
+        // we can use safe indexing here as well but due to lack of time I am not implementing ! sorry :)
+        return "\(currenceCells[row].symbol) : \(currenceCells[row].name)"
+    }
+    
+    func getCellCode(row: Int) -> String {
+        return "\(currenceCells[row].symbol)"
+    }
+    
 }

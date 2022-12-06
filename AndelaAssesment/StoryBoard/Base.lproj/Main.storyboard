@@ -24,12 +24,18 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="xrC-Tw-A75"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="To" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZRg-9P-bJc">
                                         <rect key="frame" x="32" y="81" width="107" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="XXf-HG-Ybr"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TIG-Eh-y6Y">
                                         <rect key="frame" x="161" y="10" width="221" height="48"/>
@@ -76,16 +82,31 @@
                                     <constraint firstAttribute="height" constant="300" id="Srn-tT-bHh"/>
                                 </constraints>
                             </view>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kwC-PZ-7ZL">
+                                <rect key="frame" x="0.0" y="700" width="414" height="162"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="bHf-RZ-4fV"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="vKl-eP-b0h"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="PYS-MR-Gaa"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="kwC-PZ-7ZL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CkY-f8-acd"/>
                             <constraint firstItem="7ch-sw-2P8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="k9y-Nl-Zol"/>
+                            <constraint firstItem="kwC-PZ-7ZL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kVj-Cy-cWg"/>
+                            <constraint firstItem="kwC-PZ-7ZL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="oRQ-gW-NZG"/>
                             <constraint firstItem="7ch-sw-2P8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v12-9t-RG3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TLR-yU-RdX"/>
                     <connections>
+                        <outlet property="currencyPicker" destination="kwC-PZ-7ZL" id="L7U-V9-6zk"/>
                         <outlet property="fromAmountText" destination="TIG-Eh-y6Y" id="tR1-Nv-BJN"/>
                         <outlet property="fromHeadingText" destination="iws-ip-GLM" id="mp5-kh-hsW"/>
                         <outlet property="toAmountText" destination="PMS-aj-SHn" id="0FZ-tL-tQy"/>
